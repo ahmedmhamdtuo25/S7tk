@@ -1,1 +1,472 @@
-# S7tk
+````markdown
+# 🩺 Se7tek Pregnancy Monitoring Platform
+
+<p align="center">
+  End-to-End Healthcare Data Platform + BI + AI Knowledge System for Pregnancy Care
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/SQL-Server-red?style=for-the-badge&logo=microsoftsqlserver"/>
+  <img src="https://img.shields.io/badge/Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure"/>
+  <img src="https://img.shields.io/badge/dbt-Transformation-orange?style=for-the-badge&logo=dbt"/>
+  <img src="https://img.shields.io/badge/Airflow-Orchestration-teal?style=for-the-badge&logo=apacheairflow"/>
+  <img src="https://img.shields.io/badge/PowerBI-Dashboard-yellow?style=for-the-badge&logo=powerbi"/>
+  <img src="https://img.shields.io/badge/Tableau-Analytics-blue?style=for-the-badge&logo=tableau"/>
+  <img src="https://img.shields.io/badge/AI-RAG-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+</p>
+
+---
+
+# 📌 Overview
+
+Se7tek Pregnancy Monitoring Platform is an enterprise-grade healthcare analytics and AI solution designed to monitor:
+
+- Maternal health  
+- Pregnancy risks  
+- Clinical adherence  
+- Medication compliance  
+- Medical analysis trends  
+
+The platform combines:
+
+- Data Engineering  
+- Data Warehousing  
+- Business Intelligence  
+- AI-powered Knowledge Retrieval (RAG)  
+- Web-based Clinical Monitoring  
+
+The system was implemented in two architecture versions:
+
+- **On-Premises Architecture**
+- **Cloud-Native Architecture**
+
+---
+
+# 🎯 Project Scope
+
+The platform helps healthcare organizations improve maternal care through advanced analytics and AI.
+
+## Core Objectives
+
+- Early detection of high-risk pregnancies  
+- Monitor medication adherence  
+- Track lab results & clinical analysis  
+- Measure patient engagement  
+- Improve doctor performance visibility  
+- Provide intelligent medical knowledge support using AI  
+
+---
+
+# 🚀 Key Features
+
+## Data Platform
+- Raw healthcare data ingestion
+- ETL / ELT pipelines
+- Data transformation
+- Fact & Dimension modeling
+- Star schema design
+- Pipeline orchestration
+
+---
+
+## Business Intelligence
+- Interactive dashboards
+- KPI monitoring
+- Risk analytics
+- Medication adherence tracking
+- Doctor performance analysis
+
+---
+
+## AI Knowledge System (RAG)
+- Context-aware medical Q&A
+- Evidence-based recommendations
+- Pregnancy-specific knowledge retrieval
+- LLM-powered responses
+
+---
+
+## Web Application
+Unified interface for:
+
+- Clinical monitoring
+- Dashboard visualization
+- AI assistant
+- Patient risk exploration
+
+---
+
+# 🏗️ Architecture Overview
+
+The platform supports two deployment models.
+
+---
+
+# 1️⃣ On-Premises Architecture
+
+### Stack
+- Microsoft SQL Server
+- SSIS
+- SQL Stored Procedures
+- SQL Server DW
+- Tableau
+- Power BI
+
+<img src="docs/architecture/on-prem-architecture.png" width="100%"/>
+
+---
+
+## Pipeline Flow
+
+### Source
+Operational databases generating raw healthcare data:
+- Patient profiles
+- Pregnancy history
+- Medications
+- Clinical analyses
+
+### Ingestion
+Using **SSIS** to load raw data.
+
+### Transformation
+- Raw Staging (STG)
+- Operational Data Store (ODS)
+- Pre-DW Views
+
+### Warehouse
+SQL Server DW with:
+- Fact tables
+- Dimension tables
+- Star schema
+
+### Serving / BI
+Dashboards in:
+- Tableau
+- Power BI
+
+---
+
+# 2️⃣ Cloud Architecture
+
+### Stack
+- Azure SQL Database
+- Azure Data Factory
+- dbt
+- Microsoft Fabric
+- Apache Airflow
+- Tableau
+- Power BI
+
+<img src="docs/architecture/cloud-architecture.png" width="100%"/>
+
+---
+
+## Pipeline Flow
+
+### Source
+Azure transactional database.
+
+### Ingestion
+Using **ADF Pipelines**
+
+### Transformation
+Using **dbt**
+
+#### Staging Models
+- Clean raw data
+- Standardize fields
+
+#### Intermediate Models
+- Apply business logic
+- Entity unification
+
+#### Mart Models
+- Fact tables
+- Dimension tables
+- Star schema optimization
+
+### Warehouse
+Using:
+- Fabric Lakehouse
+- Fabric Warehouse
+
+### Orchestration
+Using **Apache Airflow**
+
+```bash
+ADF Ingestion
+    ↓
+dbt Compile & Run
+    ↓
+Refresh Fabric Models
+````
+
+---
+
+# 🧠 AI Knowledge System (RAG)
+
+The Knowledge System is the intelligent knowledge layer of Se7tek.
+
+It uses **Retrieval-Augmented Generation (RAG)** to provide accurate, context-aware medical information for pregnancy monitoring.
+
+---
+
+## RAG Objectives
+
+* Improve clinical decision support
+* Reduce information retrieval time
+* Provide evidence-based recommendations
+* Enable intelligent medical Q&A
+
+---
+
+## RAG Pipeline
+
+```bash
+User Query
+   ↓
+Embedding Generation
+   ↓
+Vector Search
+   ↓
+Knowledge Retrieval
+   ↓
+LLM Context Injection
+   ↓
+Response Generation
+```
+
+---
+
+## Knowledge Sources
+
+* Pregnancy medical guidelines
+* Clinical protocols
+* Research papers
+* Drug references
+* Internal documentation
+
+---
+
+# 📊 Dashboards Showcase
+
+The platform includes **20+ dashboards** across multiple domains.
+
+---
+
+## Executive Dashboard
+
+Unified analytics hub.
+
+<img src="docs/dashboards/executive-dashboard.png" width="100%"/>
+
+---
+
+## Patient Journey Dashboard
+
+Tracks:
+
+* Demographics
+* BMI
+* Attendance
+* High-risk patients
+
+<img src="docs/dashboards/patient-journey.png" width="100%"/>
+
+---
+
+## Risk Monitor Dashboard
+
+Tracks:
+
+* Alerts
+* Missed doses
+* Abnormal analysis
+* Risk trends
+
+<img src="docs/dashboards/risk-monitor.png" width="100%"/>
+
+---
+
+## Population & Risk Dashboard
+
+Provides:
+
+* Risk segmentation
+* Population analysis
+* Outcome tracking
+
+<img src="docs/dashboards/population-risk.png" width="100%"/>
+
+---
+
+## Maternal Medication Analytics Dashboard
+
+Tracks:
+
+* Prescriptions
+* Medication trends
+* Adherence
+
+<img src="docs/dashboards/medication-analytics.png" width="100%"/>
+
+---
+
+## Doctor Performance Dashboard
+
+Tracks:
+
+* Workload
+* Escalation rates
+* Performance metrics
+
+<img src="docs/dashboards/doctor-performance.png" width="100%"/>
+
+---
+
+## Pregnancy Monitoring Dashboard
+
+Tracks:
+
+* Pregnancy lifecycle
+* Risk progression
+* Clinical risk
+
+<img src="docs/dashboards/pregnancy-monitoring.png" width="100%"/>
+
+---
+
+# 🌐 Web Application
+
+The web application serves as the unified analytics and AI interface.
+
+## Main Modules
+
+* Authentication
+* Dashboard embedding
+* AI assistant
+* Monitoring
+* Reporting
+
+---
+
+## User Roles
+
+* Doctors
+* Nurses
+* Administrators
+* Analysts
+
+---
+
+# 🛠️ Tech Stack
+
+## Data Engineering
+
+* SQL Server
+* SSIS
+* Azure Data Factory
+* dbt
+* Apache Airflow
+
+## Data Warehouse
+
+* SQL Server DW
+* Fabric Lakehouse
+* Fabric Warehouse
+
+## BI / Analytics
+
+* Tableau
+* Power BI
+
+## AI / ML
+
+* RAG
+* LLMs
+* Embeddings
+* Vector DB
+
+## Frontend
+
+* Web Application
+
+---
+
+# 📂 Repository Structure
+
+```bash
+se7tek-pregnancy-monitoring/
+│
+├── docs/
+│   ├── architecture/
+│   │   ├── on-prem-architecture.png
+│   │   └── cloud-architecture.png
+│   │
+│   └── dashboards/
+│       ├── executive-dashboard.png
+│       ├── patient-journey.png
+│       ├── risk-monitor.png
+│       ├── population-risk.png
+│       ├── medication-analytics.png
+│       ├── doctor-performance.png
+│       └── pregnancy-monitoring.png
+│
+├── on-prem/
+├── cloud/
+├── rag/
+├── web-app/
+└── README.md
+```
+
+---
+
+# 📈 Business Impact
+
+This platform helps healthcare organizations:
+
+* Improve maternal care quality
+* Detect risk earlier
+* Improve clinical decision-making
+* Increase medication adherence
+* Improve patient outcomes
+* Enhance operational efficiency
+
+---
+
+# 🔮 Future Enhancements
+
+* Real-time streaming pipelines
+* Predictive AI models
+* Anomaly detection
+* Personalized recommendations
+* AI Copilot for clinicians
+
+---
+
+# 👨‍💻 Contributors
+
+Built as a complete enterprise healthcare solution spanning:
+
+* Data Engineering
+* Data Warehousing
+* BI Engineering
+* AI Engineering
+* Web Development
+
+---
+
+# ⭐ Support
+
+If you found this repository useful:
+
+* Star this repo
+* Fork the project
+* Contribute improvements
+
+---
+
+```
+```
