@@ -1,23 +1,15 @@
 ````markdown
 # 🩺 Se7tek Pregnancy Monitoring Platform
 
-<p align="center">
-  End-to-End Healthcare Data Platform + BI + AI Knowledge System for Pregnancy Care
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python"/>
-  <img src="https://img.shields.io/badge/SQL-Server-red?style=for-the-badge&logo=microsoftsqlserver"/>
-  <img src="https://img.shields.io/badge/Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure"/>
-  <img src="https://img.shields.io/badge/dbt-Transformation-orange?style=for-the-badge&logo=dbt"/>
-  <img src="https://img.shields.io/badge/Airflow-Orchestration-teal?style=for-the-badge&logo=apacheairflow"/>
-  <img src="https://img.shields.io/badge/PowerBI-Dashboard-yellow?style=for-the-badge&logo=powerbi"/>
-  <img src="https://img.shields.io/badge/Tableau-Analytics-blue?style=for-the-badge&logo=tableau"/>
-  <img src="https://img.shields.io/badge/AI-RAG-purple?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
-</p>
-
----
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoftsqlserver&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?logo=dbt&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
+![Fabric](https://img.shields.io/badge/Microsoft_Fabric-7B68EE)
+![RAG](https://img.shields.io/badge/AI-RAG-purple)
 
 # 📌 Overview
 
