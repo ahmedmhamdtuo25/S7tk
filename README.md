@@ -14,28 +14,24 @@ Enterprise Healthcare Data Platform + BI + AI Knowledge System for Pregnancy Car
 
 ---
 
-# 📌 Overview
+#📌 Overview
 
-Se7tek Pregnancy Monitoring Platform is an enterprise-grade healthcare analytics and AI solution designed to monitor:
-
-- Maternal health  
-- Pregnancy risks  
-- Clinical adherence  
-- Medication compliance  
-- Medical analysis trends  
+Se7tek Pregnancy Monitoring Platform is an end-to-end healthcare analytics and AI solution designed to monitor maternal health, pregnancy risks, clinical adherence, medication compliance, and medical analysis trends.
 
 The platform combines:
 
-- Data Engineering  
-- Data Warehousing  
-- Business Intelligence  
-- AI-powered Knowledge Retrieval (RAG)  
-- Web-based Clinical Monitoring  
+Enterprise Data Engineering
+Modern Data Warehousing
+Business Intelligence
+AI-powered Medical Knowledge Retrieval (RAG)
+Web-based Clinical Monitoring
 
 The system was implemented in two architecture versions:
 
-- **On-Premises Architecture**
-- **Cloud-Native Architecture**
+On-Premises Architecture
+Cloud-Native Architecture
+
+Both architectures serve the same business goal: transforming raw healthcare data into actionable insights for clinicians, administrators, and patients.
 
 ---
 
